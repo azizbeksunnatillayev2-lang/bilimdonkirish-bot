@@ -23,12 +23,10 @@
         body { background: var(--bg-gradient); background-attachment: fixed; min-height: 100vh; padding: 20px; color: #1e293b; }
         .container { max-width: 950px; margin: 0 auto; }
 
-        /* Navigatsiya */
         .nav { display: flex; gap: 12px; margin-bottom: 25px; }
         .nav-btn { flex: 1; padding: 14px; border: none; border-radius: 18px; cursor: pointer; background: rgba(255,255,255,0.2); color: white; font-weight: 600; transition: 0.3s; text-align: center; }
         .nav-btn.active { background: white; color: var(--primary); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
 
-        /* Foydalanuvchi paneli */
         .user-info-bar {
             background: rgba(255, 255, 255, 0.15); border: 1px solid rgba(255,255,255,0.2);
             color: white; padding: 15px 20px; border-radius: 24px; display: flex;
@@ -106,7 +104,6 @@
         .hidden { display: none !important; }
         .timer-box { background: #1e293b; color: #38bdf8; padding: 10px 20px; border-radius: 50px; font-weight: bold; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 8px; margin-bottom: 15px; }
 
-        /* PLASTIK KARTA DIZAYNI */
         .real-card {
             background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #4338ca 100%);
             color: white; padding: 22px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.25);
@@ -132,7 +129,6 @@
         .premium-card-style { background: linear-gradient(135deg, #d4af37 0%, #85581A 50%, #f3e5ab 100%); color: #111 !important; border: 2px solid #ffd700; }
         .premium-badge { color: var(--verified-badge-color); border-radius: 50%; padding: 2px 4px; font-size: 0.95rem; margin-left: 5px; display: inline-flex; align-items: center; justify-content: center; }
 
-        /* Admin Menu Tizimi */
         .admin-nav-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(130px, 1fr)); gap: 10px; margin-bottom: 20px; }
         .admin-nav-btn { background: white; padding: 12px; border-radius: 14px; border: 1px solid #cbd5e1; font-weight: bold; cursor: pointer; font-size: 0.9rem; text-align: center; color: #334155; transition: 0.2s; }
         .admin-nav-btn:hover { background: #f1f5f9; border-color: var(--primary); }
@@ -140,13 +136,11 @@
         .detail-log-btn { background: #e0e7ff; color: #4f46e5; border: none; padding: 4px 10px; border-radius: 8px; font-weight: bold; cursor: pointer; text-decoration: underline; }
         .detail-log-container { background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 12px; padding: 12px; margin-top: 10px; font-size: 0.9rem; }
 
-        /* Yangi funksiyalar uchun qo'shimcha CSS uslublari */
         .gift-alert { position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background: #f59e0b; color: white; padding: 15px 30px; border-radius: 30px; font-weight: bold; z-index: 11000; box-shadow: 0 10px 25px rgba(0,0,0,0.3); font-size: 1.1rem; display: flex; align-items: center; gap: 10px; animation: slideDown 0.5s ease; }
         @keyframes slideDown { from { top: -100px; opacity: 0; } to { top: 20px; opacity: 1; } }
         .chat-container { display: flex; flex-direction: column; height: 400px; background: #f8fafc; border-radius: 16px; border: 1px solid #e2e8f0; overflow: hidden; margin-top: 15px; }
         .chat-messages { flex: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column; gap: 10px; }
         
-        /* CHAT VA SOVG'ALARNING CHIROYLI DIZAYNI */
         .chat-bubble { max-width: 75%; padding: 12px 16px; border-radius: 20px; position: relative; font-size: 0.95rem; line-height: 1.4; word-break: break-word; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
         .chat-bubble.me { background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%); color: white; align-self: flex-end; border-bottom-right-radius: 4px; }
         .chat-bubble.other { background: white; color: #1e293b; align-self: flex-start; border-bottom-left-radius: 4px; border: 1px solid #e2e8f0; }
@@ -156,15 +150,48 @@
         .chat-input-area input[type="text"] { margin: 0; padding: 10px; }
         .online-dot { width: 10px; height: 10px; background: var(--success); border-radius: 50%; display: inline-block; margin-right: 5px; }
 
-        /* SAMOLYOT BILDIRISHNOMA BELGISI (AIRCRAFT ALERT) */
         .plane-notification { position: fixed; bottom: 30px; right: 30px; background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; cursor: pointer; box-shadow: 0 10px 25px rgba(37, 99, 235, 0.5); z-index: 12000; animation: pulsePlane 2s infinite; border: 2px solid white; }
         .plane-badge-counter { position: absolute; top: -5px; right: -5px; background: var(--danger); color: white; font-size: 0.75rem; font-weight: bold; border-radius: 50%; width: 22px; height: 22px; display: flex; align-items: center; justify-content: center; border: 2px solid white; }
         @keyframes pulsePlane { 0% { transform: scale(1); box-shadow: 0 10px 25px rgba(37, 99, 235, 0.5); } 50% { transform: scale(1.1); box-shadow: 0 10px 35px rgba(37, 99, 235, 0.8); } 100% { transform: scale(1); box-shadow: 0 10px 25px rgba(37, 99, 235, 0.5); } }
+
+        #id-login-section { background: #f0f9ff; border: 1px solid #bae6fd; padding: 15px; border-radius: 16px; margin-top: 10px; }
+        #login-error { color: var(--danger); font-size: 0.9rem; margin-top: 8px; display: none; }
+
+        .pin-field-wrapper { position: relative; }
+        .pin-field-wrapper input {
+            padding-right: 50px;
+            letter-spacing: 2px;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+        .pin-toggle-eye {
+            position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
+            cursor: pointer; color: #64748b; font-size: 1.1rem;
+            width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
+            border-radius: 8px;
+        }
+        .pin-toggle-eye:hover { background: #e2e8f0; color: var(--primary); }
+        #pin-modal input[type="text"], #pin-modal input[type="password"] {
+            font-family: 'Courier New', monospace;
+        }
+        .pin-hint { font-size: 0.8rem; color: #64748b; margin-top: -8px; margin-bottom: 12px; }
+
+        /* TEST BANNER (sarlavha uchun chiroyli ko'rinish) */
+        .test-banner {
+            background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+            color: white; padding: 16px 22px; border-radius: 18px;
+            margin-bottom: 15px; display: flex; align-items: center; gap: 14px;
+            box-shadow: 0 10px 25px rgba(79, 70, 229, 0.3);
+        }
+        .test-banner i { font-size: 1.8rem; opacity: 0.9; }
+        .test-banner-info { flex: 1; }
+        .test-banner-class { font-size: 1.15rem; font-weight: 700; letter-spacing: 0.3px; }
+        .test-banner-subject { font-size: 0.9rem; opacity: 0.9; margin-top: 2px; }
+        .test-banner-timer { background: rgba(0,0,0,0.25); padding: 8px 14px; border-radius: 12px; font-weight: bold; font-family: 'Courier New', monospace; font-size: 1rem; }
     </style>
 </head>
 <body>
 
-<!-- Samolyot belgisi xabarlar kelganda chiqadi -->
 <div id="plane-alert-btn" class="plane-notification hidden" onclick="openChatFromPlane()">
     <i class="fas fa-paper-plane"></i>
     <span class="plane-badge-counter" id="plane-msg-count">0</span>
@@ -175,7 +202,8 @@
     <button class="btn-sm" style="background:white; color:#b45309;" onclick="document.getElementById('gift-notification').classList.add('hidden')">OK</button>
 </div>
 
-<div id="auth-modal" class="glass-card" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10000; max-width: 450px; width: 90%; display: none;">
+<!-- AUTH MODAL -->
+<div id="auth-modal" class="glass-card" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10000; max-width: 450px; width: 90%; max-height: 95vh; overflow-y: auto; display: none;">
     <h3 style="text-align: center; margin-bottom: 15px; color: var(--primary);">Foydalanuvchi Profili</h3>
     <label>Ism va Familiyangiz:</label>
     <input type="text" id="init-username" placeholder="Masalan: Asadbek Olimov">
@@ -184,7 +212,34 @@
     <button class="btn-main" id="btn-save-profile">Profilni Saqlash va Kirish</button>
     <hr style="margin: 15px 0; border: none; border-top: 1px dashed #cbd5e1;">
     <p style="text-align: center; font-size: 0.85rem; color: #64748b;">Mavjud profil bormi?</p>
-    <button class="btn-main" id="btn-secret-login" style="background: #0ea5e9; margin-top: 8px; padding: 12px; font-size: 0.9rem;">🔐 ID orqali Tizimga Kirish</button>
+    <button class="btn-main" id="btn-secret-login" style="background: #0ea5e9; margin-top: 8px; padding: 12px; font-size: 0.9rem;">🔐 ID va PIN orqali Kirish</button>
+    
+    <div id="id-login-section" class="hidden">
+        <label style="font-weight:600;"><i class="fas fa-id-card"></i> ID kodingizni kiriting:</label>
+        <input type="text" id="login-id-input" placeholder="Masalan: ID-12345" autocomplete="off">
+        <button class="btn-main" style="background:#0ea5e9;" onclick="loginWithID()">➡️ Davom etish</button>
+        <p id="login-error"></p>
+    </div>
+</div>
+
+<!-- PIN KIRITISH MODAL -->
+<div id="pin-modal" class="glass-card hidden" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 10500; max-width: 420px; width: 92%;">
+    <h3 style="text-align: center; color: var(--primary); margin-bottom: 5px;"><i class="fas fa-shield-alt"></i> PIN Kodni Kiriting</h3>
+    <p style="text-align: center; font-size: 0.9rem; color: #64748b; margin-bottom: 5px;">2-bosqichli xavfsizlik</p>
+    <p style="text-align: center; font-size: 0.85rem; color: #64748b; margin-bottom: 15px;">Foydalanuvchi: <b id="pin-modal-user" style="color: var(--primary);"></b></p>
+    
+    <div class="pin-field-wrapper">
+        <input type="password" id="pin-input-main" placeholder="PIN kodingizni kiriting" autocomplete="off" maxlength="64">
+        <div class="pin-toggle-eye" id="pin-eye-toggle" onclick="togglePinVisibility()">
+            <i class="fas fa-eye"></i>
+        </div>
+    </div>
+    <p class="pin-hint">Harf, raqam va belgilar ishlatilishi mumkin</p>
+    
+    <p id="pin-error" style="color: var(--danger); text-align: center; font-size: 0.9rem; margin-bottom: 12px; display: none;"></p>
+    
+    <button class="btn-main" style="background: var(--success);" onclick="verifyPin()">✅ Tasdiqlash</button>
+    <button class="btn-main" style="background: #64748b; margin-top: 8px;" onclick="cancelPin()">Bekor qilish</button>
 </div>
 
 <div id="edit-profile-modal" class="glass-card hidden" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; max-width: 450px; width: 90%; max-height: 90vh; overflow-y: auto;">
@@ -224,6 +279,30 @@
     <input type="file" id="adm-edit-avatar-file" accept="image/*">
     <button class="btn-main" onclick="saveUserByAdmin()">💾 Saqlash</button>
     <button class="btn-main" onclick="document.getElementById('admin-edit-user-modal').classList.add('hidden')" style="background:#64748b; margin-top:10px;">Yopish</button>
+</div>
+
+<!-- ADMIN PIN EDIT MODAL -->
+<div id="admin-edit-pin-modal" class="glass-card hidden" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 9999; max-width: 450px; width: 90%;">
+    <h3 style="color: var(--primary); margin-bottom: 15px; text-align: center;"><i class="fas fa-key"></i> PIN Kodni Tahrirlash</h3>
+    <p>Foydalanuvchi ID: <b id="adm-pin-uid" style="color: var(--primary);">...</b></p>
+    <p style="font-size:0.85rem; color:#64748b; margin-bottom:10px;">Boshlang'ich PIN kod foydalanuvchining ID raqami. Endi harf, raqam va belgilar ishlatishingiz mumkin.</p>
+    <label style="font-weight:600;">Yangi PIN kod:</label>
+    <div class="pin-field-wrapper">
+        <input type="password" id="adm-pin-input" placeholder="Masalan: ali2024 yoki 12345" autocomplete="off" maxlength="64">
+        <div class="pin-toggle-eye" onclick="toggleAdminPinVisibility('adm-pin-input', this)">
+            <i class="fas fa-eye"></i>
+        </div>
+    </div>
+    <label style="font-weight:600;">PIN kodni tasdiqlang (yana kiriting):</label>
+    <div class="pin-field-wrapper">
+        <input type="password" id="adm-pin-confirm" placeholder="PIN kodni takrorlang" autocomplete="off" maxlength="64">
+        <div class="pin-toggle-eye" onclick="toggleAdminPinVisibility('adm-pin-confirm', this)">
+            <i class="fas fa-eye"></i>
+        </div>
+    </div>
+    <p id="adm-pin-error" style="color: var(--danger); font-size:0.9rem; margin-bottom:10px; display:none;"></p>
+    <button class="btn-main" style="background: var(--warning);" onclick="saveUserPinByAdmin()">💾 PIN Kodni Saqlash</button>
+    <button class="btn-main" style="background: #64748b; margin-top:10px;" onclick="document.getElementById('admin-edit-pin-modal').classList.add('hidden')">Yopish</button>
 </div>
 
 <div class="container" id="main-layout">
@@ -281,7 +360,6 @@
         <button class="btn-main" onclick="closeDepositModal()" style="background: #64748b; margin-top: 10px;">Yopish</button>
     </div>
 
-    <!-- O'QUVCHI TABI -->
     <div id="view-user">
         <div id="user-content" class="glass-card">
             <h2 id="view-title" style="text-align: center;">Sinfni Tanlang</h2>
@@ -289,7 +367,16 @@
         </div>
         
         <div id="quiz-area" class="hidden">
-            <div style="text-align: center;"><div class="timer-box"><i class="fas fa-clock"></i> <span id="live-timer">00:00</span></div></div>
+            <!-- TEST BANNER: sinf + fan nomi + timer -->
+            <div class="test-banner">
+                <i class="fas fa-graduation-cap"></i>
+                <div class="test-banner-info">
+                    <div class="test-banner-class" id="banner-class">Sinf</div>
+                    <div class="test-banner-subject" id="banner-subject">Fan</div>
+                </div>
+                <div class="test-banner-timer"><i class="fas fa-clock"></i> <span id="live-timer">00:00</span></div>
+            </div>
+            
             <div id="jump-nav" class="q-nav-container"></div>
             <div id="questions-list"></div>
             <button class="btn-main" id="btn-finish" onclick="finishQuiz()" style="margin-top: 10px; margin-bottom: 20px;">✅ Natijani Ko'rish</button>
@@ -303,11 +390,10 @@
         </div>
     </div>
 
-    <!-- DO'STLAR VA SOVG'ALAR TABI -->
     <div id="view-friends" class="hidden">
         <div class="glass-card">
             <h2>🔍 O'quvchilarni ID orqali Qidirish, Yozish & Sovg'a</h2>
-            <input type="text" id="friend-search-id" placeholder="O'quvchi ID raqamini kiriting (Masalan: ID-123456)">
+            <input type="text" id="friend-search-id" placeholder="O'quvchi ID raqamini kiriting (Masalan: ID-12345)">
             <button class="btn-main" onclick="searchFriendByID()">🔍 Qidirish</button>
 
             <div id="friend-search-result" class="hidden" style="margin-top:20px; padding:15px; background:#f0f4f8; border-radius:16px;">
@@ -368,7 +454,6 @@
             <div id="my-friends-list" style="display:grid; grid-template-columns:1fr; gap:15px; margin-top:15px;"></div>
         </div>
 
-        <!-- CHAT OYNASI MODAL -->
         <div id="chat-modal" class="glass-card hidden">
             <div style="display:flex; justify-content:between; align-items:center;">
                 <h3 id="chat-with-title">Chat</h3>
@@ -386,7 +471,6 @@
         </div>
     </div>
 
-    <!-- ADMIN PANEL -->
     <div id="view-admin" class="hidden">
         <div class="glass-card" style="background: #f8fafc; border-bottom: 4px solid var(--primary);">
             <h2 style="color: var(--primary); margin-bottom: 15px;"><i class="fas fa-user-shield"></i> Admin Boshqaruv Tizimi</h2>
@@ -500,7 +584,7 @@
                 <h3 style="color: #0369a1; margin-bottom: 12px;"><i class="fas fa-id-card"></i> ID orqali Tezkor Hisob & Boshqaruv</h3>
                 <div style="background: #eef2ff; border: 1px solid #c7d2fe; padding: 15px; border-radius: 16px; margin-bottom: 15px;">
                     <label style="font-weight: 600; color: #1e3a8a;">Foydalanuvchi ID kodini kiriting:</label>
-                    <input type="text" id="search-id-input" placeholder="Masalan: ID-123456" style="margin-bottom: 10px;">
+                    <input type="text" id="search-id-input" placeholder="Masalan: ID-12345" style="margin-bottom: 10px;">
                     <button class="btn-sm" style="background: #0284c7; color: white; width: 100%; padding: 12px; border-radius: 10px;" onclick="searchUserByID()">🔍 ID bo'yicha qidirish</button>
                 </div>
                 
@@ -514,6 +598,12 @@
                     </div>
                     <p style="margin-bottom: 8px; font-size: 1.05rem;">Joriy balans: <strong style="color: var(--warning);" id="res-coins">0 ⭐️</strong></p>
                     <p style="margin-bottom: 12px; font-size: 0.95rem; color:#4f46e5;">Premium Holati: <strong id="res-premium-until">Yo'q</strong></p>
+
+                    <div style="border-top: 1px dashed #e2e8f0; padding-top: 10px; margin-bottom: 15px; background: #fef3c7; padding: 10px; border-radius: 12px; border: 1px solid #fde68a;">
+                        <strong style="color: #b45309; font-size:0.9rem; display:block; margin-bottom:8px;"><i class="fas fa-key"></i> PIN Kodni Boshqarish:</strong>
+                        <p style="font-size:0.85rem; margin-bottom:8px;">Joriy PIN: <b id="res-pin-display" style="color: #b45309; letter-spacing: 1px;">...</b></p>
+                        <button class="btn-sm" style="background:#b45309; color:white; width:100%; padding:10px;" onclick="openAdminPinEditModal()">🔑 PIN Kodni Tahrirlash</button>
+                    </div>
                     
                     <div style="border-top: 1px dashed #e2e8f0; padding-top: 10px; margin-bottom: 15px;">
                         <label style="font-weight: 600; font-size:0.9rem;">⭐️ Yulduzcha o'zgartirish (Qo'shish: `50`, Ayirish: `-20`):</label>
@@ -540,7 +630,6 @@
                         </div>
                     </div>
                     
-                    <!-- BUTUNLAY O'CHIRISH FUNKSIYASI SHU YERDA -->
                     <div style="border-top: 1px dashed #e2e8f0; padding-top: 10px; display: flex; flex-direction: column; gap: 8px;">
                         <button class="btn-sm" style="background: #f59e0b; color: white; width:100%; padding: 12px;" id="btn-res-ban" onclick="toggleQuickBan()">Banlash</button>
                         <button class="btn-main btn-danger" style="width:100%; padding: 12px;" onclick="deleteUserCompletelyFromDb()">⚠️ BAZADAN BUTUNLAY O'CHIRISH</button>
@@ -574,7 +663,7 @@
 
 <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
-    import { getDatabase, ref, set, push, onValue, remove, update } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+    import { getDatabase, ref, set, push, onValue, remove, update, get } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
     const firebaseConfig = {
         apiKey: "AIzaSyDafsnHRJpk5cM9eXvTWfwuQy1QOgBJ0TA",
@@ -605,9 +694,16 @@
     let searchedUserCurrentCoins = 0;
     let searchedUserBanStatus = false;
     let searchedUserPremiumValue = "yo'q";
+    let searchedUserPin = "";
     let activeChatFriendId = null;
     let currentChatFriendName = "";
     let premiumEditId = null;
+
+    let pendingPinUserId = null;
+    let pendingPinUserName = "";
+
+    // Sahifa sarlavhasi uchun asosiy nom
+    const BASE_TITLE = "BILIMDON";
 
     let scoreConfig = { correct: 10, wrong: 5, premCorrect: 20, premWrong: 2, newUserStars: 50 };
     const defaultAvatar = "https://cdn-icons-png.flaticon.com/512/1998/1998592.png";
@@ -624,6 +720,19 @@
     } else {
         loadDashboard();
         setUserOnlineStatus();
+    }
+
+    // ==========================================
+    // SAHIFA SARLAVHASINI BOSHQARISH
+    // ==========================================
+    function setPageTitle(className = "", subjectName = "") {
+        if(className && subjectName) {
+            document.title = `${className}-sinf ${subjectName} — ${BASE_TITLE}`;
+        } else if(className) {
+            document.title = `${className}-sinf — ${BASE_TITLE}`;
+        } else {
+            document.title = BASE_TITLE;
+        }
     }
 
     function formatUserNameHtml(uData) {
@@ -715,21 +824,189 @@
         }
     };
 
+    window.togglePinVisibility = () => {
+        const inp = document.getElementById('pin-input-main');
+        const icon = document.querySelector('#pin-eye-toggle i');
+        if(inp.type === 'password') {
+            inp.type = 'text';
+            icon.className = 'fas fa-eye-slash';
+        } else {
+            inp.type = 'password';
+            icon.className = 'fas fa-eye';
+        }
+    };
+
+    window.toggleAdminPinVisibility = (inputId, btn) => {
+        const inp = document.getElementById(inputId);
+        const icon = btn.querySelector('i');
+        if(inp.type === 'password') {
+            inp.type = 'text';
+            icon.className = 'fas fa-eye-slash';
+        } else {
+            inp.type = 'password';
+            icon.className = 'fas fa-eye';
+        }
+    };
+
     document.getElementById('btn-secret-login').onclick = () => {
-        const inputId = prompt("Profilingiz ID kodini kiriting:");
-        if(!inputId) return;
-        onValue(ref(db, `smart_quiz_users/${inputId.trim()}`), (snap) => {
+        const section = document.getElementById('id-login-section');
+        section.classList.toggle('hidden');
+        if(!section.classList.contains('hidden')) {
+            document.getElementById('login-id-input').focus();
+        }
+    };
+
+    window.loginWithID = () => {
+        const errorEl = document.getElementById('login-error');
+        errorEl.style.display = 'none';
+        
+        let inputId = document.getElementById('login-id-input').value.trim();
+        
+        if(!inputId) {
+            errorEl.innerText = "❌ Iltimos, ID kodni kiriting!";
+            errorEl.style.color = "var(--danger)";
+            errorEl.style.display = 'block';
+            return;
+        }
+        
+        if(!/^ID-/i.test(inputId)) {
+            inputId = 'ID-' + inputId;
+        } else {
+            inputId = 'ID-' + inputId.substring(3);
+        }
+        
+        const idNumber = inputId.replace('ID-', '');
+        if(!/^\d+$/.test(idNumber)) {
+            errorEl.innerText = "❌ ID faqat raqamlardan iborat bo'lishi kerak! Namuna: ID-12345";
+            errorEl.style.color = "var(--danger)";
+            errorEl.style.display = 'block';
+            return;
+        }
+        
+        if(idNumber.length < 3) {
+            errorEl.innerText = "❌ ID juda qisqa! Iltimos, to'g'ri ID kiriting.";
+            errorEl.style.color = "var(--danger)";
+            errorEl.style.display = 'block';
+            return;
+        }
+        
+        errorEl.innerText = "⏳ Tekshirilmoqda...";
+        errorEl.style.color = "var(--primary)";
+        errorEl.style.display = 'block';
+        
+        onValue(ref(db, `smart_quiz_users/${inputId}`), (snap) => {
             if(snap.exists()) {
-                localStorage.setItem('quiz_client_token', inputId.trim());
-                localStorage.setItem('quiz_profile_setup', 'true');
-                localStorage.setItem('quiz_user_name', snap.val().name || "Foydalanuvchi");
-                alert("Muvaffaqiyatli tizimga kirildi!");
-                location.reload();
+                const userData = snap.val();
+                
+                if(userData.banned) {
+                    errorEl.innerText = "🔴 Sizning akkauntingiz bloklangan! Admin bilan bog'laning.";
+                    errorEl.style.color = "var(--danger)";
+                    errorEl.style.display = 'block';
+                    return;
+                }
+                
+                errorEl.style.display = 'none';
+                pendingPinUserId = inputId;
+                pendingPinUserName = userData.name || "Foydalanuvchi";
+                openPinModal(inputId, pendingPinUserName);
+                
             } else {
-                alert("Bunday ID kodi topilmadi!");
+                errorEl.innerText = `❌ "${inputId}" ID kodi bazada topilmadi!`;
+                errorEl.style.color = "var(--danger)";
+                errorEl.style.display = 'block';
             }
         }, { onlyOnce: true });
     };
+
+    window.openPinModal = (userId, userName) => {
+        pendingPinUserId = userId;
+        pendingPinUserName = userName;
+        
+        document.getElementById('pin-modal-user').innerText = `${userName} (${userId})`;
+        document.getElementById('pin-error').style.display = 'none';
+        
+        const pinInput = document.getElementById('pin-input-main');
+        pinInput.value = "";
+        pinInput.type = "password";
+        document.querySelector('#pin-eye-toggle i').className = 'fas fa-eye';
+        
+        document.getElementById('pin-modal').classList.remove('hidden');
+        
+        setTimeout(() => {
+            pinInput.focus();
+        }, 100);
+    };
+
+    window.verifyPin = () => {
+        if(!pendingPinUserId) return;
+        
+        const enteredPin = document.getElementById('pin-input-main').value.trim();
+        
+        if(!enteredPin) {
+            document.getElementById('pin-error').innerText = "❌ PIN kodni kiriting!";
+            document.getElementById('pin-error').style.display = 'block';
+            return;
+        }
+        
+        onValue(ref(db, `smart_quiz_users/${pendingPinUserId}`), (snap) => {
+            if(!snap.exists()) {
+                document.getElementById('pin-error').innerText = "❌ Foydalanuvchi topilmadi!";
+                document.getElementById('pin-error').style.display = 'block';
+                return;
+            }
+            
+            const userData = snap.val();
+            const correctPin = String(userData.pin || pendingPinUserId.replace('ID-', ''));
+            
+            if(enteredPin === correctPin) {
+                localStorage.setItem('quiz_client_token', pendingPinUserId);
+                localStorage.setItem('quiz_profile_setup', 'true');
+                localStorage.setItem('quiz_user_name', userData.name || "Foydalanuvchi");
+                
+                document.getElementById('pin-error').innerText = "✅ PIN to'g'ri! Kirilmoqda...";
+                document.getElementById('pin-error').style.color = "var(--success)";
+                document.getElementById('pin-error').style.display = 'block';
+                
+                setTimeout(() => {
+                    location.reload();
+                }, 700);
+            } else {
+                document.getElementById('pin-input-main').value = "";
+                document.getElementById('pin-input-main').focus();
+                document.getElementById('pin-error').innerText = "❌ PIN kod noto'g'ri! Qaytadan urinib ko'ring.";
+                document.getElementById('pin-error').style.color = "var(--danger)";
+                document.getElementById('pin-error').style.display = 'block';
+            }
+        }, { onlyOnce: true });
+    };
+
+    window.cancelPin = () => {
+        document.getElementById('pin-modal').classList.add('hidden');
+        pendingPinUserId = null;
+        pendingPinUserName = "";
+        document.getElementById('login-id-input').focus();
+    };
+
+    document.addEventListener('DOMContentLoaded', () => {
+        const loginInput = document.getElementById('login-id-input');
+        if(loginInput) {
+            loginInput.addEventListener('keypress', (e) => {
+                if(e.key === 'Enter') {
+                    e.preventDefault();
+                    loginWithID();
+                }
+            });
+        }
+        const pinInput = document.getElementById('pin-input-main');
+        if(pinInput) {
+            pinInput.addEventListener('keypress', (e) => {
+                if(e.key === 'Enter') {
+                    e.preventDefault();
+                    verifyPin();
+                }
+            });
+        }
+    });
 
     document.getElementById('btn-save-profile').onclick = () => {
         const nameInput = document.getElementById('init-username').value.trim();
@@ -739,6 +1016,8 @@
         const joinDate = new Date().toLocaleString('uz-UZ');
         localStorage.setItem('quiz_profile_setup', 'true');
         localStorage.setItem('quiz_user_name', nameInput);
+
+        const initialPin = clientToken.replace('ID-', '');
 
         const proceedSave = (avatarBase64) => {
             const initialStars = scoreConfig.newUserStars || 50;
@@ -754,11 +1033,13 @@
                 showBadge: false,
                 badgeColor: "#0ea5e9",
                 profileColor: "#1e293b",
-                lastSeen: "online"
+                lastSeen: "online",
+                pin: initialPin
             }).then(() => {
                 document.getElementById('auth-modal').style.display = "none";
                 document.getElementById('main-layout').classList.remove('hidden');
                 loadDashboard();
+                alert(`✅ Profil yaratildi!\n\n🔐 Sizning boshlang'ich PIN kodingiz: ${initialPin}\n(ID raqamingiz bilan bir xil)\n\nKeyinchalik PIN kodni harf va belgilar bilan o'zgartirishingiz mumkin (admin orqali).`);
             });
         };
 
@@ -829,7 +1110,8 @@
     let searchedFriendData = null;
     window.searchFriendByID = () => {
         let fid = document.getElementById('friend-search-id').value.trim();
-        if(!fid.startsWith('ID-')) fid = 'ID-' + fid;
+        if(!/^ID-/i.test(fid)) fid = 'ID-' + fid;
+        else fid = 'ID-' + fid.substring(3);
         if(fid === clientToken) return alert("O'zingizni qidira olmaysiz!");
 
         onValue(ref(db, `smart_quiz_users/${fid}`), (snap) => {
@@ -892,7 +1174,7 @@
                                 </div>
                             </div>
                             <div style="display:flex; gap:8px;">
-                                <button class="btn-sm" style="background:var(--primary); color:white;" onclick="openChat('${fid}', '${actualUserData.name.replace(/'/g, "\\'")}')"><i class="fas fa-comments"></i> Chat</button>
+                                <button class="btn-sm" style="background:var(--primary); color:white;" onclick="openChat('${fid}', '${(actualUserData.name||'').replace(/'/g, "\\'")}')"><i class="fas fa-comments"></i> Chat</button>
                                 <button class="btn-sm" style="background:var(--danger); color:white;" onclick="deleteFriend('${fid}')"><i class="fas fa-trash"></i> O'chirish</button>
                             </div>
                         </div>
@@ -1217,6 +1499,54 @@
         }
     };
 
+    window.openAdminPinEditModal = () => {
+        if(!searchedUserToken) return;
+        document.getElementById('adm-pin-uid').innerText = searchedUserToken;
+        document.getElementById('adm-pin-input').value = "";
+        document.getElementById('adm-pin-confirm').value = "";
+        document.getElementById('adm-pin-error').style.display = 'none';
+        document.getElementById('adm-pin-input').type = 'password';
+        document.getElementById('adm-pin-confirm').type = 'password';
+        document.querySelectorAll('#admin-edit-pin-modal .pin-toggle-eye i').forEach(i => i.className = 'fas fa-eye');
+        document.getElementById('admin-edit-pin-modal').classList.remove('hidden');
+    };
+
+    window.saveUserPinByAdmin = () => {
+        if(!searchedUserToken) return;
+        const errorEl = document.getElementById('adm-pin-error');
+        errorEl.style.display = 'none';
+        
+        let newPin = document.getElementById('adm-pin-input').value.trim();
+        let confirmPin = document.getElementById('adm-pin-confirm').value.trim();
+        
+        if(!newPin) {
+            errorEl.innerText = "❌ Yangi PIN kodni kiriting!";
+            errorEl.style.display = 'block';
+            return;
+        }
+        
+        if(newPin.length < 3) {
+            errorEl.innerText = "❌ PIN kamida 3 belgidan iborat bo'lishi kerak!";
+            errorEl.style.display = 'block';
+            return;
+        }
+        
+        if(newPin !== confirmPin) {
+            errorEl.innerText = "❌ PIN kodlar mos kelmadi! Qaytadan kiriting.";
+            errorEl.style.display = 'block';
+            return;
+        }
+        
+        update(ref(db, `smart_quiz_users/${searchedUserToken}`), { pin: newPin }).then(() => {
+            alert(`✅ ${searchedUserToken} uchun yangi PIN kod saqlandi!\n\nYangi PIN: ${newPin}`);
+            document.getElementById('admin-edit-pin-modal').classList.add('hidden');
+            searchUserByID();
+        }).catch((err) => {
+            errorEl.innerText = "❌ Xatolik: " + err.message;
+            errorEl.style.display = 'block';
+        });
+    };
+
     window.switchAdminTab = (tabId, element) => {
         document.querySelectorAll('.admin-panel-sub-tab').forEach(t => t.classList.add('hidden'));
         document.querySelectorAll('.admin-nav-btn').forEach(b => b.classList.remove('active-tab'));
@@ -1286,6 +1616,17 @@
         document.getElementById('btn-u').classList.toggle('active', tab === 'user');
         document.getElementById('btn-f').classList.toggle('active', tab === 'friends');
         document.getElementById('btn-a').classList.toggle('active', tab === 'admin');
+
+        // Sahifa sarlavhasini tabga qarab tiklash
+        if(tab === 'friends') {
+            setPageTitle("", "");
+            document.title = `Do'stlar & Xabarlar — ${BASE_TITLE}`;
+        } else if(tab === 'admin') {
+            setPageTitle("", "");
+            document.title = `Admin Panel — ${BASE_TITLE}`;
+        } else if(tab === 'user') {
+            setPageTitle("", "");
+        }
     };
 
     window.saveScoreSettings = () => {
@@ -1664,6 +2005,8 @@
                 <i class="fas fa-graduation-cap" style="font-size:2rem; color:var(--primary); margin-bottom:5px;"></i><br><b>${c}-sinf</b>
             </div>
         `).join('');
+        // Sinflar ko'rinishida sahifa sarlavhasini tiklash
+        setPageTitle("", "");
     }
 
     window.openSubs = (c) => {
@@ -1676,6 +2019,8 @@
         `).join('');
         subHtml += `<button onclick="renderUserClasses()" class="btn-main" style="grid-column: 1/-1; margin-top:10px;">⬅️ Orqaga</button>`;
         document.getElementById('user-grid').innerHTML = subHtml;
+        // Fanlar ro'yxatida — faqat sinf nomi sarlavhada
+        setPageTitle(c, "");
     };
 
     window.startTest = (c, s) => {
@@ -1683,6 +2028,16 @@
         if(userCoins <= 0) return alert("⚠️ Test boshlash uchun koinlaringiz tugagan!");
         currentClass = c;
         currentSubject = s;
+
+        // ==========================================
+        // SAHIFA SARLAVHASINI YANGILASH: "Sinf Fan — BILIMDON"
+        // ==========================================
+        setPageTitle(c, s);
+
+        // Test bannerini yangilash
+        document.getElementById('banner-class').innerText = `${c}-sinf`;
+        document.getElementById('banner-subject').innerText = s;
+
         startTime = Date.now();
         questionTimestamps = {};
         clearInterval(timerInterval);
@@ -1746,6 +2101,12 @@
 
     window.finishQuiz = () => {
         clearInterval(timerInterval);
+
+        // ==========================================
+        // TEST TUGAGACH SARLAVHANI QAYTA TIKLASH
+        // ==========================================
+        setPageTitle(currentClass, currentSubject + " (Natija)");
+
         let sc = 0, cor = 0, wrg = 0;
         
         activeQuiz.forEach((q, i) => {
@@ -1810,7 +2171,8 @@
     window.searchUserByID = () => {
         let inputID = document.getElementById('search-id-input').value.trim();
         if(!inputID) return alert("ID kodni kiriting!");
-        if(!inputID.startsWith('ID-')) { inputID = 'ID-' + inputID; }
+        if(!/^ID-/i.test(inputID)) { inputID = 'ID-' + inputID; }
+        else { inputID = 'ID-' + inputID.substring(3); }
 
         onValue(ref(db, `smart_quiz_users/${inputID}`), (snap) => {
             const data = snap.val();
@@ -1823,11 +2185,13 @@
                 searchedUserCurrentCoins = data.coins || 0;
                 searchedUserBanStatus = data.banned || false;
                 searchedUserPremiumValue = data.premiumUntil || "yo'q";
+                searchedUserPin = data.pin || inputID.replace('ID-', '');
                 
                 document.getElementById('res-avatar').src = data.avatar || defaultAvatar;
                 document.getElementById('res-name').innerHTML = formatUserNameHtml(data);
                 document.getElementById('res-joined').innerText = data.joinedAt || "Noma'lum";
                 document.getElementById('res-coins').innerText = searchedUserCurrentCoins + " ⭐️";
+                document.getElementById('res-pin-display').innerText = searchedUserPin;
                 
                 let pText = "Yo'q";
                 let pauseBtn = document.getElementById('btn-res-pause-premium');
@@ -1853,7 +2217,7 @@
                 document.getElementById('btn-res-ban').style.background = searchedUserBanStatus ? "var(--success)" : "var(--danger)";
                 document.getElementById('search-result-area').classList.remove('hidden');
             }
-        });
+        }, { onlyOnce: true });
     };
 
     window.deleteUserCompletelyFromDb = () => {
@@ -2089,7 +2453,7 @@
                         </div>
                     </div>
                     <div style="display:flex; gap:8px; justify-content:flex-end;">
-                        <button class="btn-sm" style="background:var(--primary); color:white;" onclick="openAdminEditUserModal('${uid}', '${u.name.replace(/'/g, "\\'")}')"><i class="fas fa-edit"></i> Tahrirlash</button>
+                        <button class="btn-sm" style="background:var(--primary); color:white;" onclick="openAdminEditUserModal('${uid}', '${(u.name||'').replace(/'/g, "\\'")}')"><i class="fas fa-edit"></i> Tahrirlash</button>
                         <button class="btn-sm ${u.banned ? 'btn-success' : 'btn-danger'}" style="color:white;" onclick="toggleUserBanDirect('${uid}', ${u.banned || false})">
                             ${u.banned ? '<i class="fas fa-unlock"></i> Blokdan yechish' : '<i class="fas fa-ban"></i> Bloklash'}
                         </button>
